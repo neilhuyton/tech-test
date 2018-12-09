@@ -6,6 +6,11 @@ export const loadReportsSuccess = reports => ({
   reports
 });
 
+export const setVisibilityFilter = filter => ({
+  type: types.SET_VISIBILITY_FILTER,
+  filter
+});
+
 export const sortReports = sortType => ({
   type: types.SET_VISIBILITY_SORT,
   sortType
