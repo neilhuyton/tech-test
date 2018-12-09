@@ -1,19 +1,23 @@
 import * as types from "./actionTypes";
 import reportApi from "../api/ReportsApi";
 
-export function loadReportsSuccess(reports) {
-  return { type: types.LOAD_REPORTS_SUCCESS, reports };
-}
+export const loadReportsSuccess = reports => ({
+  type: types.LOAD_REPORTS_SUCCESS,
+  reports
+});
 
-export function loadReports() {
-  return function(dispatch) {
-    return reportApi
-      .getAllReports()
-      .then(reports => {
-        dispatch(loadReportsSuccess(reports));
-      })
-      .catch(error => {
-        throw error;
-      });
-  };
-}
+export const sortReports = sortType => ({
+  type: types.SET_VISIBILITY_SORT,
+  sortType
+});
+
+export const loadReports = () => dispatch => {
+  return reportApi
+    .getAllReports()
+    .then(reports => {
+      dispatch(loadReportsSuccess(reports));
+    })
+    .catch(error => {
+      throw error;
+    });
+};

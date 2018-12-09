@@ -1,1 +1,6 @@
 export const LOAD_REPORTS_SUCCESS = "LOAD_REPORTS_SUCCESS";
+
+export const SORT_ASC = "SORT_ASC";
+export const SORT_DESC = "SORT_DESC";
+
+export const SET_VISIBILITY_SORT = "SET_VISIBILITY_SORT";

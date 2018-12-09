@@ -2,7 +2,23 @@ import React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import ReportList from "./ReportList";
+import * as types from "../actions/actionTypes";
 import * as reportActions from "../actions/reportActions";
+
+const sortReports = (a, b) => {
+  if (a.name < b.name) {
+    return -1;
+  }
+  if (a.name > b.name) {
+    return 1;
+  }
+  return 0;
+};
+
+const getReports = (reports, sort) => {
+  reports = reports.sort(sortReports);
+  return sort === types.SORT_DESC ? [...reports].reverse() : reports;
+};
 
 class ReportsPage extends React.Component {
   componentDidMount() {
@@ -21,7 +37,7 @@ class ReportsPage extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  reports: state.reports
+  reports: getReports(state.reports, state.visibilitySort)
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
