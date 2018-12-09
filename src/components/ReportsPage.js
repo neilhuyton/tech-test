@@ -55,10 +55,11 @@ class ReportsPage extends React.Component {
 
   render() {
     const reports = this.props.reports;
+    const removeReport = this.props.actions.removeReport;
     return (
       <>
         <h1>Reports</h1>
-        <ReportList reports={reports} />
+        <ReportList reports={reports} removeReport={removeReport} />
       </>
     );
   }

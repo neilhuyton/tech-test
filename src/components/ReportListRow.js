@@ -1,6 +1,6 @@
 import React from "react";
 
-const ReportListRow = ({ report }) => {
+const ReportListRow = ({ report, removeReport }) => {
   return (
     <tr>
       <td>{report.name}</td>
@@ -8,6 +8,9 @@ const ReportListRow = ({ report }) => {
       <td>{report.chartType}</td>
       <td>{report.frequency}</td>
       <td>{report.active.toString()}</td>
+      <td>
+        <button onClick={() => removeReport(report)}>Delete</button>
+      </td>
     </tr>
   );
 };

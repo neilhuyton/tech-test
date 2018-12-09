@@ -6,6 +6,11 @@ export const loadReportsSuccess = reports => ({
   reports
 });
 
+export const deleteReportSuccess = report => ({
+  type: types.DELETE_REPORT_SUCCESS,
+  report
+});
+
 export const setVisibilityFilter = filter => ({
   type: types.SET_VISIBILITY_FILTER,
   filter
@@ -21,6 +26,18 @@ export const loadReports = () => dispatch => {
     .getAllReports()
     .then(reports => {
       dispatch(loadReportsSuccess(reports));
+    })
+    .catch(error => {
+      throw error;
+    });
+};
+
+export const removeReport = report => dispatch => {
+  return reportApi
+    .deleteReport(report)
+    .then(() => {
+      dispatch(deleteReportSuccess(report));
+      return;
     })
     .catch(error => {
       throw error;

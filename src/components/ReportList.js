@@ -11,11 +11,16 @@ const ReportList = ({ reports, removeReport }) => {
           <th>Chart Type</th>
           <th>Frequency</th>
           <th>Active</th>
+          <th />
         </tr>
       </thead>
       <tbody>
         {reports.map(report => (
-          <ReportListRow key={report.name} report={report} />
+          <ReportListRow
+            key={report.name}
+            report={report}
+            removeReport={removeReport}
+          />
         ))}
       </tbody>
     </table>
