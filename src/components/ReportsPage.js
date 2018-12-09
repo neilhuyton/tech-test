@@ -21,7 +21,7 @@ class ReportsPage extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  reports: state.reports.data
+  reports: state.reports
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
