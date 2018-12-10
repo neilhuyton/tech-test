@@ -3,7 +3,7 @@ import FilterLink from "./FilterLink";
 import * as types from "../actions/actionTypes";
 
 const Filter = () => (
-  <div>
+  <>
     <span>Show: </span>
     <FilterLink filter={types.SHOW_ALL} cssClass="filter-all">
       All
@@ -29,7 +29,7 @@ const Filter = () => (
     >
       Operating System
     </FilterLink> */}
-  </div>
+  </>
 );
 
 export default Filter;

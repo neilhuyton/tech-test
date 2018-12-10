@@ -1,0 +1,545 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App deleting a report, removes it from the UI 1`] = `
+Array [
+  <tr
+    className="report"
+  >
+    <td>
+      Thirty day gender report
+    </td>
+    <td>
+      Gender
+    </td>
+    <td>
+      pie
+    </td>
+    <td>
+      monthly
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Thirty day visitor report
+    </td>
+    <td>
+      Visitors
+    </td>
+    <td>
+      bar
+    </td>
+    <td>
+      monthly
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Weekly age range report
+    </td>
+    <td>
+      Age range
+    </td>
+    <td>
+      bar
+    </td>
+    <td>
+      weekly
+    </td>
+    <td>
+      false
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+]
+`;
+
+exports[`App filter by age range 1`] = `
+<tr
+  className="report"
+>
+  <td>
+    Weekly age range report
+  </td>
+  <td>
+    Age range
+  </td>
+  <td>
+    bar
+  </td>
+  <td>
+    weekly
+  </td>
+  <td>
+    false
+  </td>
+  <td>
+    <button
+      className="report-delete"
+      onClick={[Function]}
+    >
+      Delete
+    </button>
+  </td>
+</tr>
+`;
+
+exports[`App filter by gender 1`] = `
+<tr
+  className="report"
+>
+  <td>
+    Thirty day gender report
+  </td>
+  <td>
+    Gender
+  </td>
+  <td>
+    pie
+  </td>
+  <td>
+    monthly
+  </td>
+  <td>
+    true
+  </td>
+  <td>
+    <button
+      className="report-delete"
+      onClick={[Function]}
+    >
+      Delete
+    </button>
+  </td>
+</tr>
+`;
+
+exports[`App filter by visitors 1`] = `
+Array [
+  <tr
+    className="report"
+  >
+    <td>
+      Daily visitors report
+    </td>
+    <td>
+      Visitors
+    </td>
+    <td>
+      column
+    </td>
+    <td>
+      daily
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Thirty day visitor report
+    </td>
+    <td>
+      Visitors
+    </td>
+    <td>
+      bar
+    </td>
+    <td>
+      monthly
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+]
+`;
+
+exports[`App sorting correctly orders reports by name when ASC button is clicked 1`] = `
+Array [
+  <tr
+    className="report"
+  >
+    <td>
+      Daily visitors report
+    </td>
+    <td>
+      Visitors
+    </td>
+    <td>
+      column
+    </td>
+    <td>
+      daily
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Thirty day gender report
+    </td>
+    <td>
+      Gender
+    </td>
+    <td>
+      pie
+    </td>
+    <td>
+      monthly
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Thirty day visitor report
+    </td>
+    <td>
+      Visitors
+    </td>
+    <td>
+      bar
+    </td>
+    <td>
+      monthly
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Weekly age range report
+    </td>
+    <td>
+      Age range
+    </td>
+    <td>
+      bar
+    </td>
+    <td>
+      weekly
+    </td>
+    <td>
+      false
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+]
+`;
+
+exports[`App sorting correctly orders reports by name when DESC button is clicked 1`] = `
+Array [
+  <tr
+    className="report"
+  >
+    <td>
+      Weekly age range report
+    </td>
+    <td>
+      Age range
+    </td>
+    <td>
+      bar
+    </td>
+    <td>
+      weekly
+    </td>
+    <td>
+      false
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Thirty day visitor report
+    </td>
+    <td>
+      Visitors
+    </td>
+    <td>
+      bar
+    </td>
+    <td>
+      monthly
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Thirty day gender report
+    </td>
+    <td>
+      Gender
+    </td>
+    <td>
+      pie
+    </td>
+    <td>
+      monthly
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Daily visitors report
+    </td>
+    <td>
+      Visitors
+    </td>
+    <td>
+      column
+    </td>
+    <td>
+      daily
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+]
+`;
+
+exports[`App sorting orders reports by ASC by default 1`] = `
+Array [
+  <tr
+    className="report"
+  >
+    <td>
+      Daily visitors report
+    </td>
+    <td>
+      Visitors
+    </td>
+    <td>
+      column
+    </td>
+    <td>
+      daily
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Thirty day gender report
+    </td>
+    <td>
+      Gender
+    </td>
+    <td>
+      pie
+    </td>
+    <td>
+      monthly
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Thirty day visitor report
+    </td>
+    <td>
+      Visitors
+    </td>
+    <td>
+      bar
+    </td>
+    <td>
+      monthly
+    </td>
+    <td>
+      true
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+  <tr
+    className="report"
+  >
+    <td>
+      Weekly age range report
+    </td>
+    <td>
+      Age range
+    </td>
+    <td>
+      bar
+    </td>
+    <td>
+      weekly
+    </td>
+    <td>
+      false
+    </td>
+    <td>
+      <button
+        className="report-delete"
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </td>
+  </tr>,
+]
+`;
